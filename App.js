@@ -71,7 +71,7 @@
      <View style={styles.view}>
       <Texto text = {this.state.textoExposto}></Texto>
       <InputTexto text = '' onTextChange = {this.storeTextChange}></InputTexto>
-      <Botao onButtonClicked = {this.handleButtonClick}
+      <Botao style={styles.button} onButtonClicked = {this.handleButtonClick}
       ></Botao> 
      </View>);
    }
@@ -85,6 +85,13 @@
      flex: 1,
      alignContent: 'center',
      justifyContent: 'center'
-   }
+   },
+   button: {
+    flex: 2,
+    alignContent: 'center',
+    justifyContent: 'end',
+    backgroundColor: '#6e1f08',
+    fontSize: 50
+  }
  });
  

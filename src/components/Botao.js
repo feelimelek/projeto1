@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, Button} from 'react-native';
+import { StyleSheet, Button, View} from 'react-native';
 
 
 export default class Botao extends Component {
@@ -13,23 +13,23 @@ export default class Botao extends Component {
     }
     render() {
         return (
-            <Button
-                onPress={this.handleClick}
-                title="Alterar Texto"
-                style={styles.button}
-            ></Button>
+            <View >
+                <Button  
+                    style={styles.btn}      
+                    onPress={this.handleClick}
+                    title="Alterar Texto"
+                >
+                </Button>
+            </View>
         )
     }
 }
 
-
 const styles = StyleSheet.create({
-    button: {
-      flex: 2,
-      textAlign: 'center',
-      justifyContent: 'end',
+    btn: {
       backgroundColor: '#6e1f08',
-      fontSize: 50
+      flex: 1,
+      alignContent: 'center',
+      justifyContent: 'center'
     }
-  });
-
+});
